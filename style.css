@@ -105,3 +105,30 @@ input, select {
 body {
     width: 100%;
 }
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: burlywood;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr auto;
+    grid-template-areas: 
+        "header"
+        "MomDad"
+        "MomDadMe"
+        "footer";
+}
+
+header {
+    display: flex;
+}
+
+h1 {
+    float: left;
+}
+
+nav {
+    float: right;
+    width: 300px
+}
