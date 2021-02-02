@@ -121,8 +121,8 @@ main {
 }
 
 header {
-    width: calc(100vw - 40px);
-    padding: 80px 40px;
+    width: 100%;
+    padding: 20px 20px;
     text-align: left;
     color: whitesmoke;
     background-color: #5288a1;
@@ -159,8 +159,6 @@ h2,
 h3 {
     font-family: 'Sora', sans-serif;
     font-weight: 600;
-    color: whitesmoke;
-    padding: 50px 0;
 }
 
 h2 {
@@ -206,14 +204,12 @@ main {
     padding: 15px;
     color: whitesmoke;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
 }
 
 .tl {
     grid-area: tl;
     background-color: #5288a1;
-    font-size: 100px;
-    font-weight: 500;
+    
 }
 .dad {
     grid-area: dad;

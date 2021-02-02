@@ -206,13 +206,12 @@ main {
     padding: 15px;
     color: whitesmoke;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
 }
 
 .tl {
     grid-area: tl;
     background-color: #5288a1;
-    font-size: 100px;
+    font-size: 40px;
     font-weight: 500;
 }
 .dad {

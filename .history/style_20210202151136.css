@@ -121,9 +121,8 @@ main {
 }
 
 header {
-    width: calc(100vw - 40px);
-    padding: 80px 40px;
-    text-align: left;
+    max-width: 100vw;
+    padding: 20px 0;
     color: whitesmoke;
     background-color: #5288a1;
     display: flex;
@@ -132,7 +131,7 @@ header {
 }
 
 h1 {
-    width: 100%;
+    width: 80%;
     font-family: 'Sora', sans-serif;
     font-size: 100px;
     font-weight: 700;
@@ -159,8 +158,6 @@ h2,
 h3 {
     font-family: 'Sora', sans-serif;
     font-weight: 600;
-    color: whitesmoke;
-    padding: 50px 0;
 }
 
 h2 {
@@ -206,14 +203,12 @@ main {
     padding: 15px;
     color: whitesmoke;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
 }
 
 .tl {
     grid-area: tl;
     background-color: #5288a1;
-    font-size: 100px;
-    font-weight: 500;
+    
 }
 .dad {
     grid-area: dad;

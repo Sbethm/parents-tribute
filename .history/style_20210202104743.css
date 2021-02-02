@@ -121,9 +121,8 @@ main {
 }
 
 header {
-    width: calc(100vw - 40px);
-    padding: 80px 40px;
-    text-align: left;
+    width: 100vw;
+    padding: 20px 0;
     color: whitesmoke;
     background-color: #5288a1;
     display: flex;
@@ -132,7 +131,7 @@ header {
 }
 
 h1 {
-    width: 100%;
+    width: 80%;
     font-family: 'Sora', sans-serif;
     font-size: 100px;
     font-weight: 700;
@@ -159,8 +158,6 @@ h2,
 h3 {
     font-family: 'Sora', sans-serif;
     font-weight: 600;
-    color: whitesmoke;
-    padding: 50px 0;
 }
 
 h2 {
@@ -174,11 +171,9 @@ h3 {
 p {
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
-    color: whitesmoke;
 }
 
 main {
-    max-width: 100vw;
     padding: 40px 20px;
 }
 
@@ -202,54 +197,51 @@ main {
 }
 
 .grid-box {
-    border: solid 1px whitesmoke;
+    border: solid 1px grey;
     padding: 15px;
     color: whitesmoke;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
 }
 
 .tl {
     grid-area: tl;
-    background-color: #5288a1;
-    font-size: 100px;
-    font-weight: 500;
+    
 }
 .dad {
     grid-area: dad;
-    background-color: #74b0cc;
+    background-color: #cc74c0;
 }
 
 .mom {
     grid-area: mom;
-    background-color: #cc74b2;
+    background-color: rgb(232, 192, 255);
 }
 
 .f-1 {
     grid-area: f-1;
-    background: linear-gradient(270deg, rgb(72, 72, 168), #74b0cc);
+    background: linear-gradient(270deg, lavender, cornflowerblue);
 }
 .m-1 {
     grid-area: m-1; 
-    background: linear-gradient(270deg, #cc74b2, rgb(72, 72, 168));
+    background: linear-gradient(270deg, pink, lavender);
 }
 .f-2 {
     grid-area: f-2;
-    background: linear-gradient(270deg, rgb(72, 72, 168),  #74b0cc);
+    background: linear-gradient(270deg, lavender, cornflowerblue);
 }
 .m-2 {
     grid-area: m-2; 
-    background: linear-gradient(270deg, #cc74b2, rgb(72, 72, 168));
+    background: linear-gradient(270deg, pink, lavender);
 }
 .fm-1 {
     grid-area: fm-1;
-    background: linear-gradient(270deg, #cc74b2, rgb(72, 72, 168),  #74b0cc);
+    background: linear-gradient(270deg, pink, lavender, cornflowerblue);
 }
 .fm-2 {
     grid-area: fm-2;
-    background: linear-gradient(270deg, #cc74b2, rgb(72, 72, 168),  #74b0cc);
+    background: linear-gradient(270deg, pink, lavender, cornflowerblue);
 }
 .grid-box.fm-3 {
     grid-area: fm-3;
-    background: linear-gradient(270deg, #cc74b2, rgb(72, 72, 168),  #74b0cc);
+    background: linear-gradient(270deg, pink, lavender, cornflowerblue);
 }
