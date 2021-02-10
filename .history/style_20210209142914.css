@@ -1,0 +1,550 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* MY CODE BELOW */
+body {
+    width: 100vw;
+}
+
+main {
+    width: calc(100vw - 40px);
+    height: auto;
+    padding: 20px 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    width: 100vw;
+    padding-top: 80px;
+    color: rgb(168, 54, 159);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    width: 100%;
+    font-family: 'Sora', sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: double 10px rgb(140, 23, 187);
+    padding-bottom: 30px;
+}
+
+.navigation {
+    width: 100%;
+    background-color: rgb(168, 54, 159);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} 
+
+a {
+    padding: 20px 0;
+    background-color: rgb(168, 54, 159);
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: wheat;
+}
+
+section {
+    width: 100%;
+    background-color: rgb(65, 175, 209);
+    border: solid 1px rgb(40, 23, 187);
+}
+
+h2 {
+    max-width: 100%;
+    padding: 10px 20px;
+    font-family: 'Sora', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(168, 54, 159);
+}
+
+.disney-adventure__img,
+.img-sitting {
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+    align-content: center;
+    border-top: solid 3px whitesmoke;
+    border-bottom: solid 3px whitesmoke;
+}
+
+p {
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+}
+
+.grid {
+    display: grid;
+    margin: 20px 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(13, fit-content);
+    grid-template-areas: 
+        "tl tl"
+        "dad mom"
+        "f-1 m-1"
+        "f-2 m-2"
+        "f-3 m-3"
+        "f-4 m-4"
+        "f-5 m-5"
+        "f-6 m-6"
+        "f-7 m-7"
+        "f-8 m-8"
+        "fm-1 fm-1"
+        "fm-2 fm-2"
+        "fm-3 fm-3";
+}
+
+.grid-box {
+    border: solid 1px rgb(40, 23, 187);
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    color: rgb(168, 54, 159);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.tl {
+    grid-area: tl;
+    font-size: 100px;
+    font-weight: 500;
+    color: whitesmoke;
+    background-color: rgb(65, 175, 209);
+}
+.dad {
+    grid-area: dad;
+}
+
+.mom {
+    grid-area: mom;
+}
+
+.f-1 {
+    grid-area: f-1;
+}
+
+.f-2 {
+    grid-area: f-2;
+    
+}
+
+.f-3 {
+    grid-area: f-3;
+    
+}
+
+.f-4 {
+    grid-area: f-4;
+    
+}
+
+.f-5 {
+    grid-area: f-5;
+    
+}
+
+.f-6 {
+    grid-area: f-6;
+    
+}
+
+.f-7 {
+    grid-area: f-7;
+    
+}
+
+.f-8 {
+    grid-area: f-8;
+    
+}
+
+.m-1 {
+    grid-area: m-1; 
+}
+
+.m-2 {
+    grid-area: m-2; 
+}
+
+.m-3 {
+    grid-area: m-3; 
+}
+
+.m-4 {
+    grid-area: m-4; 
+}
+
+.m-5 {
+    grid-area: m-5; 
+}
+
+.m-6 {
+    grid-area: m-6; 
+}
+
+.m-7 {
+    grid-area: m-7; 
+}
+
+.m-8 {
+    grid-area: m-8; 
+}
+
+.fm-1 {
+    grid-area: fm-1;
+}
+
+.fm-2 {
+    grid-area: fm-2;
+}
+
+.fm-3 {
+    grid-area: fm-3;
+}
+
+footer {
+    width: calc(100vw - 40px);
+    height: 200px;
+    margin-top: 40px;
+    padding: 80px 20px 0 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    border: solid 1px rgb(40, 23, 187);
+}
+
+.icon {
+    width: 40px;
+    height: auto;
+}
+
+
+@media only screen and (min-width: 600px) {
+    
+    main {
+        width: calc(100vw - 40px);
+        height: auto;
+        padding: 20px 20px;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    section {
+        width: 100%;
+        background-color: rgb(65, 175, 209);
+        border: solid 1px rgb(40, 23, 187);
+    }
+
+    .section__intro {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+            "title p1"
+            "picture p2";        
+    }
+
+    
+    /*h2 {
+        max-width: 100%;
+        padding: 10px 20px;
+        font-family: 'Sora', sans-serif;
+        font-size: 60px;
+        font-weight: 600;
+        color: rgb(168, 54, 159);
+    }*/
+    
+    .img-sitting {
+        width: 300px;
+        height: auto;
+        padding-left: 20px;
+        border-top: none;
+        border-bottom: none;
+        grid-area: picture;
+    }
+
+    .section__intro--p{
+        float: right;
+    }
+
+    .disney-adventure__img,
+    .img-sitting {
+        width: 300px;
+        height: auto;
+        border-top: none;
+        border-bottom: none;
+    }
+    
+    p {
+        width: 500px;
+        padding: 10px 20px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 30px;
+        line-height: 40px;
+        color: rgb(255, 255, 255);
+    }
+    
+    .grid {
+        display: grid;
+        margin: 20px 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(13, fit-content);
+        grid-template-areas: 
+            "tl tl"
+            "dad mom"
+            "f-1 m-1"
+            "f-2 m-2"
+            "f-3 m-3"
+            "f-4 m-4"
+            "f-5 m-5"
+            "f-6 m-6"
+            "f-7 m-7"
+            "f-8 m-8"
+            "fm-1 fm-1"
+            "fm-2 fm-2"
+            "fm-3 fm-3";
+    }
+    
+    .grid-box {
+        border: solid 1px rgb(40, 23, 187);
+        background-color: rgb(255, 255, 255);
+        padding: 20px;
+        color: rgb(168, 54, 159);
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 30px;
+    }
+    
+    .tl {
+        grid-area: tl;
+        font-size: 100px;
+        font-weight: 500;
+        color: whitesmoke;
+        background-color: rgb(65, 175, 209);
+    }
+    .dad {
+        grid-area: dad;
+    }
+    
+    .mom {
+        grid-area: mom;
+    }
+    
+    .f-1 {
+        grid-area: f-1;
+    }
+    
+    .f-2 {
+        grid-area: f-2;
+        
+    }
+    
+    .f-3 {
+        grid-area: f-3;
+        
+    }
+    
+    .f-4 {
+        grid-area: f-4;
+        
+    }
+    
+    .f-5 {
+        grid-area: f-5;
+        
+    }
+    
+    .f-6 {
+        grid-area: f-6;
+        
+    }
+    
+    .f-7 {
+        grid-area: f-7;
+        
+    }
+    
+    .f-8 {
+        grid-area: f-8;
+        
+    }
+    
+    .m-1 {
+        grid-area: m-1; 
+    }
+    
+    .m-2 {
+        grid-area: m-2; 
+    }
+    
+    .m-3 {
+        grid-area: m-3; 
+    }
+    
+    .m-4 {
+        grid-area: m-4; 
+    }
+    
+    .m-5 {
+        grid-area: m-5; 
+    }
+    
+    .m-6 {
+        grid-area: m-6; 
+    }
+    
+    .m-7 {
+        grid-area: m-7; 
+    }
+    
+    .m-8 {
+        grid-area: m-8; 
+    }
+    
+    .fm-1 {
+        grid-area: fm-1;
+    }
+    
+    .fm-2 {
+        grid-area: fm-2;
+    }
+    
+    .fm-3 {
+        grid-area: fm-3;
+    }
+    
+    footer {
+        width: calc(100vw - 40px);
+        height: 200px;
+        margin-top: 40px;
+        padding: 80px 20px 0 20px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 40px;
+        font-weight: 500;
+        border: solid 1px rgb(40, 23, 187);
+    }
+    
+    .icon {
+        width: 40px;
+        height: auto;
+    }
+}    
+        
+@media only screen and (min-width: 900px) {
+}*/
