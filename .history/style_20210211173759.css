@@ -348,10 +348,14 @@ footer {
     }
     
     a {
-        padding: 20px 40px;
+        padding: 20px 7px;
+        background-color: rgb(168, 54, 159);
+        font-family: 'Poppins', sans-serif;
         font-size: 1.5em;
-        border-left: solid 3px rgb(140, 23, 187);
-        border-right: solid 3px rgb(140, 23, 187);
+        color: whitesmoke;
+        text-decoration: none;
+        border-left: solid 1px rgb(140, 23, 187);
+        border-right: solid 1px rgb(140, 23, 187);
     }
 
     p {

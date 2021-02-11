@@ -348,8 +348,10 @@ footer {
     }
     
     a {
-        padding: 20px 40px;
+        padding: 20px 40;
         font-size: 1.5em;
+        color: whitesmoke;
+        text-decoration: none;
         border-left: solid 3px rgb(140, 23, 187);
         border-right: solid 3px rgb(140, 23, 187);
     }
