@@ -1,0 +1,703 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* MY CODE BELOW */
+
+body {
+    width: 100vw;
+    position: absolute;
+}
+
+main {
+    width: calc(100vw - 40px);
+    height: 100%;
+    margin: 20px 20px;
+    background-color: rgb(65, 175, 209);
+    border: solid 1px rgb(40, 23, 187);
+}
+
+header {
+    width: 100vw;
+    padding-top: 40px;
+    color: rgb(168, 54, 159);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    width: 100%;
+    font-family: 'Sora', sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: double 10px rgb(140, 23, 187);
+    padding-bottom: 30px;
+}
+
+.navigation {
+    width: 100%;
+    background-color: rgb(168, 54, 159);
+    text-align: center;
+    border-bottom: solid 1px rgb(140, 23, 187);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} 
+
+a {
+    padding: 20px 7px;
+    background-color: rgb(168, 54, 159);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.a--border {
+    padding: 20px 15px;
+    border-left: solid 1px rgb(140, 23, 187);
+    border-right: solid 1px rgb(140, 23, 187);
+}
+
+a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(168, 54, 159);
+    font-weight: 600;
+}
+
+section {
+    width: 100%;
+}
+
+h2 {
+    max-width: 100%;
+    padding: 20px 20px 10px 20px;
+    font-family: 'Sora', sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(168, 54, 159);
+}
+
+
+.img-sitting,
+.img-hiking,
+.disney-adventure__img {
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+    align-content: center;
+}
+
+.p--first,
+.p--inner,
+.p--last {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    text-indent: 2em;
+    line-height: 1.5em;
+    word-spacing: 0.1em;
+    color: rgb(255, 255, 255);
+}
+
+.p--first {
+    padding: 10px 20px 0px 20px;
+}
+
+.p--inner {
+    padding: 0px 20px 0px 20px;
+}
+
+.p--last {
+    padding: 0px 20px 10px 20px;
+}
+
+footer {
+    width: calc(100vw - 42px);
+    height: 100px;
+    padding: 40px 20px 0 20px;
+    position: relative;
+    bottom: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    border: solid 1px rgb(40, 23, 187);
+}
+
+.icon {
+    width: 20px;
+    height: auto;
+}
+/*MEET THE PARENTS CODE PHONE*/
+
+.img-sitting {
+    margin: 10px 0;
+}
+
+/*TIMELINE CODE PHONE*/
+
+.grid--timeline {
+    display: grid;
+    margin: 10px 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(13, fit-content);
+    grid-template-areas: 
+        "tl tl"
+        "dad mom"
+        "f-1 m-1"
+        "f-2 m-2"
+        "f-3 m-3"
+        "f-4 m-4"
+        "f-5 m-5"
+        "f-6 m-6"
+        "f-7 m-7"
+        "f-8 m-8"
+        "fm-1 fm-1"
+        "fm-2 fm-2"
+        "fm-3 fm-3";
+}
+
+.grid__box--timeline {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 7px;
+    color: rgb(168, 54, 159);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.dad {
+    grid-area: dad;
+    border-top: solid 1px rgb(40, 23, 187);
+    border-bottom: solid 1px rgb(40, 23, 187);
+    border-right: solid 1px rgb(40, 23, 187);
+}
+
+.mom {
+    grid-area: mom;
+    border-top: solid 1px rgb(40, 23, 187);
+    border-bottom: solid 1px rgb(40, 23, 187);
+}
+
+.f-1 {
+    grid-area: f-1;
+    border-bottom: solid 1px rgb(40, 23, 187);
+    border-right: solid 1px rgb(40, 23, 187);
+}
+
+.f-2 {
+    grid-area: f-2;
+    border-bottom: solid 1px rgb(40, 23, 187);
+    border-right: solid 1px rgb(40, 23, 187);
+}
+
+.f-3 {
+    grid-area: f-3;
+    border-bottom: solid 1px rgb(40, 23, 187);
+    border-right: solid 1px rgb(40, 23, 187);
+}
+
+.f-4 {
+    grid-area: f-4;
+    border-bottom: solid 1px rgb(40, 23, 187);
+    border-right: solid 1px rgb(40, 23, 187);
+}
+
+.f-5 {
+    grid-area: f-5;   
+    border-bottom: solid 1px rgb(40, 23, 187);
+    border-right: solid 1px rgb(40, 23, 187);
+}
+
+.f-6 {
+    grid-area: f-6;
+    border-bottom: solid 1px rgb(40, 23, 187);
+    border-right: solid 1px rgb(40, 23, 187);
+}
+
+.f-7 {
+    grid-area: f-7;
+    border-bottom: solid 1px rgb(40, 23, 187);
+    border-right: solid 1px rgb(40, 23, 187);
+}
+
+.f-8 {
+    grid-area: f-8; 
+    border-bottom: solid 1px rgb(40, 23, 187);
+    border-right: solid 1px rgb(40, 23, 187);
+}
+
+.m-1 {
+    grid-area: m-1; 
+    border-bottom: solid 1px rgb(40, 23, 187);
+}
+
+.m-2 {
+    grid-area: m-2;
+    border-bottom: solid 1px rgb(40, 23, 187); 
+}
+
+.m-3 {
+    grid-area: m-3; 
+    border-bottom: solid 1px rgb(40, 23, 187);
+}
+
+.m-4 {
+    grid-area: m-4; 
+    border-bottom: solid 1px rgb(40, 23, 187);
+}
+
+.m-5 {
+    grid-area: m-5; 
+    border-bottom: solid 1px rgb(40, 23, 187);
+}
+
+.m-6 {
+    grid-area: m-6; 
+    border-bottom: solid 1px rgb(40, 23, 187);
+}
+
+.m-7 {
+    grid-area: m-7; 
+    border-bottom: solid 1px rgb(40, 23, 187);
+}
+
+.m-8 {
+    grid-area: m-8; 
+    border-bottom: solid 1px rgb(40, 23, 187);
+}
+
+.fm-1 {
+    grid-area: fm-1;
+    border-bottom: solid 1px rgb(40, 23, 187);
+}
+
+.fm-2 {
+    grid-area: fm-2;
+    border-bottom: solid 1px rgb(40, 23, 187);
+}
+
+.fm-3 {
+    grid-area: fm-3;
+    border-bottom: solid 1px rgb(40, 23, 187);
+}
+
+.img-hiking {
+    margin-bottom: 10px;
+}
+
+/*LESSON LEARNED CODE PHONE*/ 
+
+.disney-adventure__img {
+    margin: 20px 0;
+}
+
+
+/*iPAD*/ @media screen and (min-width: 700px) and (max-width: 899px) {
+
+    header {
+        padding-top: 60px;
+    }
+    
+    h1 {
+        font-size: 3.5em;
+        padding-bottom: 50px;
+    }
+    
+    main {
+        padding: 20px 0;
+        margin: 0 20px;
+        width: calc(100vw - 40px);
+        background-color: rgb(65, 175, 209);
+    }
+    
+    a {
+        padding: 20px 40px;
+        font-size: 1.5em;
+    }
+
+    .a--border {
+        padding: 20px 60px;
+    }
+
+    h2 {
+        font-size: 2.5em;
+       
+    }
+
+    p {
+        font-size: 1.5em;
+        line-height: 40px;
+        color: rgb(255, 255, 255);
+    }
+
+.p--first,
+.p--inner,
+.p--last {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    text-indent: 2em;
+    line-height: 1.5em;
+    word-spacing: 0.1em;
+    color: rgb(255, 255, 255);
+}
+
+.p--first {
+    padding: 20px 40px 0px 40px;
+}
+
+.p--inner {
+    padding: 0px 20px 0px 20px;
+}
+
+.p--last {
+    padding: 0px 20px 10px 20px;
+}
+
+    section {
+        background-color: rgb(40, 23, 187, 0);
+        border: none;
+    }
+
+    .grid--section {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 200px 200px;
+        grid-template-areas: 
+            "title na"
+            "picture p1"
+            "picture p2";         
+    }
+
+    section h2 {
+        grid-area: title;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .img-sitting {
+        max-height: 360px;
+        margin-bottom: 20px;
+        border: solid 1px rgb(40, 23, 187);
+        border-left: none;
+        grid-area: picture;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .p1 {
+        align-self: flex-start;
+        grid-area: p1;
+        padding-left: 40px;
+    }
+
+    .p2 {
+        align-self: flex-end;
+        grid-area: p2;
+        padding-left: 40px;
+        padding-bottom: 30px;
+    }
+    
+   footer {
+        width: calc(100vw - 42px);
+        height: 200px;
+        padding: 40px 20px 0 20px;
+        position: relative;
+        bottom: 0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1em;
+        font-weight: 500;
+        border: solid 1px rgb(40, 23, 187);
+    }
+    
+    .icon {
+        width: 40px;
+        height: auto;
+    }
+
+/*TIMELINE CODE iPAD*/
+    
+    .grid__box--timeline{
+        padding: 20px;
+        font-size: 1.5em;
+        line-height: 35px;
+    }
+    
+    .title {
+        font-size: 2.5em;
+        color: rgb(255, 255, 255);
+        background-color: rgb(65, 175, 209);
+    }
+
+    .dad, 
+    .mom {
+        font-size: 2em;
+    }
+
+    .img-hiking {
+        border: solid 1px rgb(40, 23, 187);
+    }
+    
+  
+
+/*LESSON LEARNED CODE iPAD*/
+
+}    
+        
+/*COMPUTER*/@media screen and (min-width: 900px) and (max-width: 2000px) {
+
+    header {
+        padding-top: 80px;
+    }
+    
+    h1 {
+        font-size: 5em;
+        padding-bottom: 70px;
+    }
+    
+    main {
+        width: calc(100vw - 160px);
+        padding: 0;
+        margin: 0 80px;
+        background-image: linear-gradient(180deg, rgb(40, 23, 187), rgb(65, 175, 209));
+    }
+
+    a {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 3.5em;
+        color: rgb(243, 101, 231);
+        padding: 20px;
+    }
+
+    p {
+        font-size: 2em;
+        line-height: 50px;
+        word-spacing: 0.15em;
+        color: rgb(255, 255, 255);
+    }
+
+    section {
+        max-width: 100%;
+        background-color: rgb(40, 23, 187, 0);
+        border: none;
+    }
+
+    .grid--section {
+        display: grid;
+        padding-bottom: 40px;
+        grid-template-columns: auto;
+        grid-template-rows: 150px 420px 120px 120px;
+        grid-template-areas: 
+            "title"
+            "picture"
+            "p1"
+            "p2";         
+    }
+
+    section h2 {
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .img-sitting {
+        max-height: 400px;
+        margin-bottom: 0px;
+        border: double 3px rgb(255, 255, 255);
+        justify-self: center;
+        align-self: center;
+    }
+
+    .p1 {
+        align-self: center;
+        grid-area: p1;
+        padding: 20px 40px;
+    }
+
+    .p2 {
+        align-self: center;
+        grid-area: p2;
+        padding: 20px 40px;
+    }
+      
+/*TIMELINE CODE COMPUTER*/
+
+    .img-hiking {
+    max-height: 400px;
+    width: auto;
+    border: double 3px rgb(255, 255, 255);
+    display: block;
+    margin: 50px auto ;
+    }
+    
+    .grid__box--timeline{
+        padding: 20px;
+        font-size: 1.5em;
+        line-height: 35px;
+    }
+
+    .grid--timeline {
+        display: grid;
+        margin: 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(13, fit-content);
+        grid-template-areas: 
+            "tl tl"
+            "dad mom"
+            "f-1 m-1"
+            "f-2 m-2"
+            "f-3 m-3"
+            "f-4 m-4"
+            "f-5 m-5"
+            "f-6 m-6"
+            "f-7 m-7"
+            "f-8 m-8"
+            "fm-1 fm-1"
+            "fm-2 fm-2"
+            "fm-3 fm-3";
+    }
+
+    .grid__box--timeline {
+    background-color: rgb(255, 255, 255, 0.25);
+    color: whitesmoke;
+    font-weight: 400;
+    }
+    
+    .title {
+        font-size: 3.5em;
+        color: rgb(243, 101, 231);
+        padding: 60px 0;
+        background-color: rgb(65, 175, 209, 0);
+    }
+
+    .dad, 
+    .mom {
+        font-size: 2em;
+        font-weight: 500;
+    }
+
+    footer {
+        width: calc(100vw - 42px);
+        height: 200px;
+        padding: 40px 20px 0 20px;
+        position: relative;
+        bottom: 0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1em;
+        font-weight: 500;
+        border: solid 1px rgb(40, 23, 187);
+    }
+    
+    .icon {
+        width: 40px;
+        height: auto;
+    }
+/*LESSON LEARNED CODE iPAD*/
+
+}   
