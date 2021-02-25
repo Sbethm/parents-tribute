@@ -240,13 +240,11 @@ footer {
     height: auto;
 }
 /*MEET THE PARENTS CODE PHONE*/
-.intro--grid {
-    display: flex;
-    flex-direction: column-reverse;
-}
+
+/* .grid--section is not seen here because the code that is applied to this class can only be seen on the iPad and computer screens. */
 
 .img-sitting {
-    margin: ;
+    margin: 10px 0;
 }
 
 /*TIMELINE CODE PHONE*/

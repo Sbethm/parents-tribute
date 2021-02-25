@@ -240,13 +240,10 @@ footer {
     height: auto;
 }
 /*MEET THE PARENTS CODE PHONE*/
-.intro--grid {
-    display: flex;
-    flex-direction: column-reverse;
-}
+.intro--grid
 
 .img-sitting {
-    margin: ;
+    margin: 10px 0;
 }
 
 /*TIMELINE CODE PHONE*/

@@ -240,13 +240,11 @@ footer {
     height: auto;
 }
 /*MEET THE PARENTS CODE PHONE*/
-.intro--grid {
-    display: flex;
-    flex-direction: column-reverse;
-}
+
+/* .grid--section is not seen here because the code that is applied to this class can only be seen on the iPad and computer screens. */
 
 .img-sitting {
-    margin: ;
+    margin: 10px 0;
 }
 
 /*TIMELINE CODE PHONE*/
@@ -521,7 +519,6 @@ footer {
     .navigation {
         position: fixed;
         top: 0;
-        z-index: 3;
     }
     
     a {
@@ -564,32 +561,32 @@ footer {
         border: none;
     }
 
-    /*MEET THE PARENTS iPAD*/
-    .intro--grid {
+    /*MEET THE PARENTS
+    .grid--section {
         max-width: calc(100vw - 40px);
-        z-index: 1;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, fit-content);    
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 200px 200px;
         grid-template-areas: 
-            "picture picture"
-            "intromom introdad";  
+            "title title"
+            "picture p1"
+            "picture p2";         
     }
 
-    .intro--mom {
-       grid-area: intromom;
-       text-align: center;
+    section h2 {
+        grid-area: title;
+        align-self: center;
+        justify-self: center;
     }
-
-    .intro--dad {
-        grid-area: introdad;
-        text-align: center;
-     }
     
     .img-sitting {
-        max-height: 380px;
+        max-height: 360px;
+        margin-bottom: 20px;
+        border: solid 1px rgb(40, 23, 187);
+        border-left: none;
         grid-area: picture;
         justify-self: center;
+        align-self: center;
     }
 
     .p1 {
@@ -620,8 +617,7 @@ footer {
 /*TIMELINE CODE iPAD*/
     
     .grid__box--timeline{
-        padding-top: 20px;
-        padding-bottom: 0;
+        padding: 20px;
         font-size: 1.5em;
         line-height: 35px;
     }
@@ -636,6 +632,11 @@ footer {
     .mom {
         font-size: 2em;
     }
+
+    .img-hiking {
+        border: solid 1px rgb(40, 23, 187);
+    }
+    
   
 
 /*LESSON LEARNED CODE iPAD*/
@@ -752,36 +753,8 @@ footer {
         height: auto;
     }
 
-    /*MEET THE PARENTS*/
-    .intro--grid {
-        max-width: calc(100vw - 40px);
-        padding: 20px 0;
-        z-index: 1;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);    
-        grid-template-areas: 
-            "intromom picture introdad";
-        justify-content: center;
-        align-items: center;
-    }
+/*TIMELINE CODE COMPUTER*/
 
-    .intro--mom {
-       grid-area: intromom;
-       text-align: center;
-    }
-
-    .intro--dad {
-        grid-area: introdad;
-        text-align: center;
-     }
-    
-    .img-sitting {
-        max-height: 380px;
-        grid-area: picture;
-        justify-self: center;
-    }
-
-    /*TIMELINE CODE COMPUTER*/
     .img-hiking {
     max-height: 400px;
     width: auto;

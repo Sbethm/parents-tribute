@@ -241,12 +241,11 @@ footer {
 }
 /*MEET THE PARENTS CODE PHONE*/
 .intro--grid {
-    display: flex;
-    flex-direction: column-reverse;
+    display: ;
 }
 
 .img-sitting {
-    margin: ;
+    margin: 10px 0;
 }
 
 /*TIMELINE CODE PHONE*/

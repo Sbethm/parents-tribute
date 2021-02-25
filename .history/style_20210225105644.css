@@ -240,13 +240,11 @@ footer {
     height: auto;
 }
 /*MEET THE PARENTS CODE PHONE*/
-.intro--grid {
-    display: flex;
-    flex-direction: column-reverse;
-}
+
+/* .grid--section is not seen here because the code that is applied to this class can only be seen on the iPad and computer screens. */
 
 .img-sitting {
-    margin: ;
+    margin: 10px 0;
 }
 
 /*TIMELINE CODE PHONE*/
@@ -752,36 +750,10 @@ footer {
         height: auto;
     }
 
-    /*MEET THE PARENTS*/
-    .intro--grid {
-        max-width: calc(100vw - 40px);
-        padding: 20px 0;
-        z-index: 1;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);    
-        grid-template-areas: 
-            "intromom picture introdad";
-        justify-content: center;
-        align-items: center;
-    }
-
-    .intro--mom {
-       grid-area: intromom;
-       text-align: center;
-    }
-
-    .intro--dad {
-        grid-area: introdad;
-        text-align: center;
-     }
-    
-    .img-sitting {
-        max-height: 380px;
-        grid-area: picture;
-        justify-self: center;
-    }
+    /*MEET THE PARENTS
 
     /*TIMELINE CODE COMPUTER*/
+
     .img-hiking {
     max-height: 400px;
     width: auto;
